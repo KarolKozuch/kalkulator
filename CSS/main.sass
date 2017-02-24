@@ -1,0 +1,82 @@
+*
+  font-size: 24px
+  font-weight: bold
+  color: rgba(20, 19, 33, 0.9)
+
+body
+  background-color: beige
+  margin: 50px
+  border: 1px solid rgba(0, 0, 0, 0.17)
+  padding: 10px
+
+.calculator
+  display: flex
+  align-items: center
+
+.numbers
+  width: 180px
+  height: 180px
+  display: flex
+  flex-wrap: wrap
+  align-content: center
+  margin-left: auto
+
+.circle
+  display: flex
+  background-color: rgba(0,0,0,0.1)
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  margin: 0 10px 10px 0
+  justify-content: space-around
+  align-items: center
+  cursor: pointer
+  transition: transform 100ms ease-in-out
+
+  &:hover
+    background-color: rgba(0,0,0,0.2)
+    transform: scale(1.2)
+  &.cancel
+    background-color: rgba(237, 11, 11, 0.86)
+    &:hover
+      background-color: rgba(228, 29, 29, 1)
+
+  > li
+    list-style: none
+
+.math-options
+    margin-right: auto
+    display: flex
+    width: 180px
+    flex-wrap: wrap
+
+    > .fundamental
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column
+
+    > .extra
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+      height: 250px
+
+      
+
+      > .equation
+        display: inline-flex
+        width: 100px
+        height: 50px
+        background-color: rgba(237, 11, 11, 0.86)
+        align-items: center
+        justify-content: center
+        border-radius: 10px
+        order: 1
+        transition: transform 100ms ease-in-out
+        cursor: pointer
+        margin: 0 10px 10px auto
+
+
+        &:hover
+          transform: scale(1.2)
